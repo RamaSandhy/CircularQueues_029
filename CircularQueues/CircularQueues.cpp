@@ -44,6 +44,13 @@ public:
 			cout << "Queue underflow\n";
 			return;
 		}
-		cout << "\nThe element delleted from the queue is: " << , queue_array[FRONT] << "\n";
+		cout << "\nThe element delleted from the queue is: " << queue_array[FRONT] << "\n";
+
+		// Cek jika antrian hanya memilki satu elemen
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
+		
 	}
 };
